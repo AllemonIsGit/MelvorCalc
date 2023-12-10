@@ -42,14 +42,17 @@ def main():
     lbl_time = QtWidgets.QLabel(window)
     lbl_time.setText("time: ")
     lbl_time.move(20, 320)
+    lbl_time.setMinimumWidth(390)
 
     lbl_cost = QtWidgets.QLabel(window)
     lbl_cost.setText("cost: ")
     lbl_cost.move(20, 350)
+    lbl_cost.setMinimumWidth(390)
 
     lbl_materials = QtWidgets.QLabel(window)
     lbl_materials.setText("materials: ")
     lbl_materials.move(20, 380)
+    lbl_materials.setMinimumWidth(390)
 
 
 
