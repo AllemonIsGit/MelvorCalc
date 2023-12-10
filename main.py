@@ -11,7 +11,7 @@ def main():
     window.setGeometry(500, 250, 1000, 500)
     window.setFixedSize(270, 430)
     window.setWindowTitle("Melvor Calculator")
-    window.setWindowIcon(QtGui.QIcon(".venv/assets/melvor_icon.png"))
+    window.setWindowIcon(QtGui.QIcon("assets/melvor_icon.png"))
 
     # Label
 
