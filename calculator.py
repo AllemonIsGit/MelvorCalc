@@ -21,11 +21,9 @@ class Calculator:
 
         loop = 0
 
-        while (current_exp < desired_exp):
-            current_exp += interval_exp
-            loop += 1
+        x = (desired_exp - current_exp) / interval_exp
 
-        return loop
+        return x
 
 
     def __calculateCost(self, values: Values, intervals: int) -> int:
