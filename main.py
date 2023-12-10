@@ -97,7 +97,7 @@ def main():
 
         result: CalculatedResults = calculator.calculate(values)
 
-        lbl_time.setText("time: " + str(result.getTime() / 60) + " minutes")
+        lbl_time.setText("time: " + str(int(result.getTime() / 60)) + " minutes")
         lbl_cost.setText("cost: " + calculator.seperateNumber(str(result.getCost())))
         lbl_materials.setText("materials: " + str(result.getMaterials()))
 
