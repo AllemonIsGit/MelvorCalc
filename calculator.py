@@ -8,10 +8,10 @@ class Calculator:
 
     def calculate(self, values: Values) -> CalculatedResults:
         intervals = self.__calculateIntervals(values)
-        cost = self.__calculateCost(values, intervals)
-        time = self.__calculateTime(values, intervals)
+        cost = int(self.__calculateCost(values, intervals))
+        time = int(self.__calculateTime(values, intervals))
 
-        return CalculatedResults(time, cost, intervals * values.getMaterialRequired())
+        return CalculatedResults(time, cost, int(intervals * values.getMaterialRequired()))
 
 
     def __calculateIntervals(self, values: Values) -> int:

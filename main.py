@@ -99,7 +99,7 @@ def main():
 
         lbl_time.setText("time: " + str(int(result.getTime() / 60)) + " minutes")
         lbl_cost.setText("cost: " + calculator.seperateNumber(str(result.getCost())))
-        lbl_materials.setText("materials: " + str(int(result.getMaterials() + 1)))
+        lbl_materials.setText("materials: " + str(result.getMaterials() + 1))
 
 
     btn_calculate = QtWidgets.QPushButton(window)
